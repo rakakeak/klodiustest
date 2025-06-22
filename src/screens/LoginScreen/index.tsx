@@ -28,7 +28,6 @@ type LoginFormData = {
 
 export default function LoginScreen({ navigation }: Props) {
   const { login } = useAuth();
-  const [error, setError] = useState<string>('');
   const [loading, setLoading] = useState<boolean>(false);
   const {
     control,
@@ -43,7 +42,6 @@ export default function LoginScreen({ navigation }: Props) {
     email: string;
     password: string;
   }) => {
-    setError('');
     setLoading(true);
     try {
       await login(email, password);
