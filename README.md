@@ -38,7 +38,7 @@ This is a simple authentication app built using **React Native**, demonstrating 
 
 ```bash
 git clone https://github.com/rakakeak/klodiustest.git
-cd react-native-auth-app
+cd klodiustest
 
 
 yarn install
